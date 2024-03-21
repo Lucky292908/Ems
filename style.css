@@ -1,0 +1,413 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Default text color */
+}
+/* Updated styles for the header */
+.container h1 {
+  text-align: center;
+  color: #fff; /* Text color */
+  background-color: #4a90e2; /* Background color - soothing blue */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+/* Add some hover effect */
+.container h1:hover {
+  background-color: #3277b3; /* Darker background color on hover */
+}
+
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+th.active {
+  color: #ffffff;
+  background-color: #da4141; /* Change color as per your preference */
+}
+
+/* Filtering and Search Styles */
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 10px;
+}
+
+.filters select,
+#searchInput {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: width 0.3s ease; /* Added transition for width */
+}
+
+.filters select:focus,
+#searchInput:focus {
+  outline: none;
+  border-color: #4CAF50; /* Change color as per your preference */
+}
+
+#searchInput:hover {
+  border: 2px solid #00aaff;
+ 
+  width: 600px; /* Width increases on hover */
+}
+
+/* Refresh Button Styles */
+#refreshButton {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Change color as per your preference */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#refreshButton:hover {
+  background-color: #45a049; /* Change color as per your preference */
+}
+
+/* Modal Styles */
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.5s; /* Add fade-in animation */
+}
+
+.modal-content {
+  background-color: #ecf685;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 80%;
+  animation: slideInDown 0.5s; /* Add slide-in animation */
+}
+
+.close {
+  color: #ff0000;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+
+/* Table Row Hover Animation */
+tr {
+  transition: background-color 0.3s ease;
+}
+
+tr:hover {
+  background-color: #e0e0e0; /* Change color as per your preference */
+}
+
+
+
+@keyframes slideInDown {
+  from {
+    
+    scale: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY();
+    opacity: 1;
+  }
+}
+
+/* Apply these animations to your elements as needed */
+table {
+  overflow:hidden;
+  th, td {
+    padding:.25em .5em;
+    text-align:left;
+    vertical-align:top;
+  }
+  th {
+    background-color:rgb(82, 82, 220);
+    color:#fff;
+  }
+  td {
+    background-color:#eee;
+  }
+  tr {
+    transition:all 1s ease-in-out;
+    &.slide-out {
+      transform:translateX(100%);
+    }
+  }
+}
+
+
+/* Additional styling for the modal popup */
+.modal-content p {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Default text color */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th.active {
+  color: #ffffff;
+  background-color: #da4141; /* Change color as per your preference */
+  animation: pulse 1.5s infinite; /* Add pulse animation */
+}
+
+/* Filtering and Search Styles */
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 10px;
+}
+
+.filters select,
+#searchInput {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: width 0.3s ease; /* Added transition for width */
+}
+
+.filters select:focus,
+#searchInput:focus {
+  outline: none;
+  border-color: #4CAF50; /* Change color as per your preference */
+}
+
+#searchInput:hover {
+  width: 450px; /* Width increases on hover */
+}
+
+/* Refresh Button Styles */
+#refreshButton {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Change color as per your preference */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#refreshButton:hover {
+  background-color: #45a049; /* Change color as per your preference */
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.5s; /* Add fade-in animation */
+}
+
+.modal-content {
+  background-color: #ecf685;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 80%;
+  animation: slideInDown 0.5s; /* Add slide-in animation */
+}
+
+.close {
+  color: #ff0000;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+/* Table Row Hover Animation */
+tr {
+  transition: background-color 0.3s ease;
+}
+
+tr:hover {
+  background-color: #e0e0e0; /* Change color as per your preference */
+  animation: bounce 1s; /* Add bounce animation */
+}
+
+/* Additional Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+table {
+  overflow:hidden;
+  th, td {
+    padding:.25em .5em;
+    text-align:left;
+    vertical-align:top;
+  }
+  th {
+    background-color:#009;
+    color:#fff;
+  }
+  td {
+    background-color:#eee;
+  }
+  tr {
+    transition:all 1s ease-in-out;
+    &.slide-out {
+      transform:translateX(100%);
+    }
+  }
+}
+
+
+
+
+
+

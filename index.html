@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management System</h1>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <div class="filters">
+            <label for="departmentFilter">Department:</label>
+            <select id="departmentFilter">
+                <option value="">All</option>
+            </select>
+            <label for="positionFilter">Position:</label>
+            <select id="positionFilter">
+                <option value="">All</option>
+            </select>
+            <label for="cityFilter">City:</label>
+            <select id="cityFilter">
+                <option value="">All</option>
+            </select>
+            <label for="stateFilter">State:</label>
+            <select id="stateFilter">
+                <option value="">All</option>
+            </select>
+        </div>
+        <button id="refreshButton" onclick="window.location.reload()">Refresh</button>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    
+                    <!-- <th data-column="employee_id">Employee No.</th> -->
+                    <th data-column="first_name">Name</th>
+                    <th data-column="last_name">Last Name</th>
+                    <th data-column="department">Department</th>
+                    <th data-column="position">Position</th>
+                    <th data-column="city">City</th>
+                    <th data-column="state">State</th>
+                    <th data-column="date_of_birth">Date of Birth</th>
+                    <th data-column="gender">Gender</th>
+                    <th data-column="salary">Salary</th>
+                    <th data-column="hire_date">Hire Date</th>
+                    <th data-column="email">Email</th>
+                    <!-- <th data-column="phone">Phone Number</th> -->
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody"></tbody>
+        </table>
+    </div>
+
+    <!-- Modal popup -->
+    <!-- Modal popup -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modalContent">
+            <!-- Additional fields for address and zip code -->
+            <p><strong>Address:</strong> <span id="modalAddress"></span></p>
+            <p><strong>Zip Code:</strong> <span id="modalZipCode"></span></p>
+        </div>
+    </div>
+</div>
+
+
+    <script src="App.js"></script>
+</body>
+</html>
